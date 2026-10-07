@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web Game Store Opportunity Report</title>
+<style>
+  :root { --ink:#1a1f2b; --muted:#5a6478; --accent:#4b3bff; --line:#e6e8ef; --bg:#f7f8fc; --card:#ffffff; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 48px 22px 96px; }
+  .hero { background:linear-gradient(135deg,#4b3bff,#8b5cf6 60%,#ec4899); color:#fff;
+          border-radius:18px; padding:34px 30px; margin-bottom:34px; box-shadow:0 12px 30px rgba(75,59,255,.22); }
+  .hero h1 { margin:0 0 8px; font-size:1.9rem; line-height:1.2; }
+  .hero p { margin:0; opacity:.95; font-size:1rem; }
+  .hero .meta { margin-top:14px; font-size:.85rem; opacity:.85; }
+  .content { background:var(--card); border:1px solid var(--line); border-radius:16px;
+             padding:12px 30px 34px; box-shadow:0 4px 18px rgba(20,25,45,.05); }
+  h1,h2,h3,h4 { line-height:1.28; }
+  .content > h2 { margin-top:38px; padding-top:20px; border-top:1px solid var(--line); font-size:1.35rem; }
+  .content > h2:first-child { border-top:none; }
+  .content > h3 { margin-top:26px; font-size:1.1rem; color:var(--accent); }
+  a { color:var(--accent); }
+  table { border-collapse:collapse; width:100%; margin:18px 0; font-size:.9rem; display:block; overflow-x:auto; }
+  th,td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:#f0f1f8; }
+  tr:nth-child(even) td { background:#fafbff; }
+  blockquote { border-left:4px solid var(--accent); margin:18px 0; padding:6px 16px;
+               background:#f5f4ff; border-radius:0 8px 8px 0; color:#333; }
+  code { background:#eef0f7; padding:1px 5px; border-radius:5px; font-size:.9em; }
+  hr { border:none; border-top:1px solid var(--line); margin:30px 0; }
+  .content > ul { padding-left:22px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1>Web Game Store Opportunity Report</h1>
+      <p>Deep research across Poki, CrazyGames, GameDistribution, GameMonetize, Yandex Games, Playgama &amp; itch.io — and the single highest-scoring HTML5 game concept to build.</p>
+      <div class="meta">Prepared October 2026 &middot; ads-first, IAP-ready strategy</div>
+    </div>
+    <div class="content">
+<h1 id="web-game-store-opportunity-report">Web Game Store Opportunity Report</h1>
+<h3 id="deep-research-across-poki-crazygames-gamedistribution-gamemonetize-yandex-games-playgama-itchio-and-the-single-highest-scoring-game-concept-to-build">Deep research across Poki, CrazyGames, GameDistribution, GameMonetize, Yandex Games, Playgama &amp; itch.io — and the single highest-scoring game concept to build</h3>
+<p><strong>Prepared for:</strong> a solo / small-team developer who wants to build one HTML5 game, publish it widely, and earn from <strong>ads first</strong> (with in-app purchases added later).
+<strong>Date:</strong> October 2026</p>
+<hr />
+<h2 id="1-executive-summary">1. Executive summary</h2>
+<ul>
+<li><strong>The channel is real and growing.</strong> The browser / HTML5 games market is roughly <strong>$8 billion in 2025–2026</strong>, growing steadily (≈2.6–3.1% CAGR). More importantly, <em>supply and attention</em> are exploding: <strong>over 15,000 new web games were released in a single quarter of 2025 — 2.7× the year before.</strong> Poki alone reaches <strong>100M+ monthly players</strong> and <strong>1B+ gameplays per month</strong>; CrazyGames reaches <strong>50–60M monthly players</strong>, strongest in the US/Tier-1 markets.</li>
+<li><strong>Ad-only monetisation is the default on web</strong>, and it fits every store in this report. Poki and GameDistribution <em>forbid</em> in-app purchases entirely; CrazyGames and Yandex Games allow IAP only on approval; Playgama supports IAP across ~10 partner platforms. This aligns perfectly with your "ads now, IAP later" plan.</li>
+<li><strong>The winning genre is merge + physics puzzle ("Suika / watermelon merge") with a light idle / progression meta.</strong> Merge is the <strong>fastest-growing casual subgenre</strong> (+61–80% year-over-year) and the only complex casual niche still open to new entrants; physics puzzle grew <strong>+61%</strong>; "block puzzle" revenue grew <strong>~12×</strong>. On web specifically, <em>Watermelon Suika Game</em> did <strong>1.1M+ plays</strong> via GameDistribution, and Suika-style titles are trending on Playgama and CrazyGames right now.</li>
+<li><strong>One game can ship to all seven stores with one codebase.</strong> Using the <strong>Playgama Bridge</strong> SDK (open-source, LGPL-3.0), a single build adapts to Poki, CrazyGames, GameDistribution, Yandex, YouTube Playables, MSN, Discord and 25+ platforms. You still submit through each store's own console, but you write the ad/payment/save code <strong>once</strong>.</li>
+<li><strong>Recommended build:</strong> a <strong>portrait, web-native (Construct / Phaser), &lt;8 MB</strong> drop-and-merge physics game with an original theme and a persistent "grow your world" idle meta. Target <strong>65%+ conversion-to-play, 5+ minutes average playtime, ≤20 MB initial load.</strong> Monetise with interstitials at natural breakpoints + optional rewarded videos (never gating core play). IAP hook is left dormant but wired.</li>
+<li><strong>Go / No-Go: GO (8.4 / 10).</strong> High demand, low build cost, universal store fit, ad-ready, IAP-ready later. Main risk: crowding — mitigated by an original theme and the idle meta layer (see §12).</li>
+</ul>
+<hr />
+<h2 id="2-methodology-tooling">2. Methodology &amp; tooling</h2>
+<p>This report follows the same <strong>"market-intelligence stack"</strong> logic described in your attached research brief, adapted from mobile app stores to <strong>web game portals</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Layer in your brief</th>
+<th>Tool named there</th>
+<th>Web-game equivalent used here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>App intelligence (rankings, listings, reviews)</td>
+<td><strong>AppStoreCat</strong> (MIT, self-hosted)</td>
+<td>Portal listing/trending pages + aggregated rankings (e.g. Playgama Game Trends, Poki <code>/hot</code>, CrazyGames homepage)</td>
+</tr>
+<tr>
+<td>Crawling JS-heavy store pages</td>
+<td><strong>Crawl4AI</strong> (Apache-2.0)</td>
+<td>Direct reads of each portal's developer docs, requirements pages and terms</td>
+</tr>
+<tr>
+<td>Deep research + report generation</td>
+<td><strong>Research-Agent</strong> (MIT)</td>
+<td>Parallel web research across vendor docs, industry reports, developer blogs and search-trend data</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important honesty note (as in your brief):</strong> no open-source tool gives 100% guaranteed revenue/download data for every store, because most web portals <strong>do not publish per-game play counts</strong>. Where a hard number is unavailable, this report uses <strong>observed metrics, estimates and confidence levels</strong> — never fabricated figures. Confidence is labelled where relevant.</p>
+<p><strong>Standards applied when reading each store:</strong> revenue-share %, audience size/region, submission requirements (file size, SDK, orientation, content rules), IAP policy, and best-fit genres.</p>
+<hr />
+<h2 id="3-the-market-at-a-glance">3. The market at a glance</h2>
+<ul>
+<li><strong>Market size:</strong> browser games ≈ <strong>$7.81B (2025) → $8.01B (2026)</strong>, forecast ≈ $9.07B by 2030 (~3.1% CAGR).</li>
+<li><strong>Supply boom:</strong> <strong>15,000+ new browser games in Q2 2025 alone</strong> (2.7× YoY, 4.9× vs. H1 2023). Competition is rising fast — originality now matters for approval.</li>
+<li><strong>Audience quality (Poki's 2026 State of Web Gaming):</strong> 37% of web gamers play <strong>multiple times per day</strong>; typical session <strong>11–20 minutes</strong>; <strong>92%</strong> rate HTML5 games high quality; <strong>62%</strong> have downloaded or bought a game after first playing it on web. This is a <strong>discovery layer</strong>, not a throwaway channel.</li>
+<li><strong>Genre mix on web:</strong> <strong>hypercasual + puzzle dominate</strong> — hypercasual held the #1 spot <strong>79%</strong> of the year, puzzle games #1 in morning windows (<strong>21%</strong>). Casual ≈ <strong>20%</strong> of all new releases; puzzles ≈ <strong>14.5%</strong>.</li>
+<li><strong>Engine reality:</strong> <strong>Unity powers ~55%</strong> of new web games (3D/complex), but <strong>light engines (Construct ~16.5%, Cocos ~8%, Phaser ~7%)</strong> dominate 2D and casual — cheaper and faster for solo devs, and better for load time.</li>
+<li><strong>Why load time decides everything:</strong> web players behave like short-form video viewers. A case study: Stickman Hook's 40 MB WebGL build → <strong>29.5s load → 50% conversion</strong>; rebuilt to 6 MB → <strong>3.7s load → 72% conversion</strong> (+22% plays). Cannon Clash hit <strong>81% conversion</strong> at a <strong>2.4 MB</strong> build. <strong>Every megabyte costs audience.</strong></li>
+</ul>
+<hr />
+<h2 id="4-store-by-store-deep-dive">4. Store-by-store deep dive</h2>
+<h3 id="41-poki-the-curated-heavyweight">4.1 Poki — the curated heavyweight</h3>
+<ul>
+<li><strong>Audience:</strong> 100M+ monthly players, 1B+ gameplays/month, #1 on web in 100+ countries. Strong global + Tier-1 mix.</li>
+<li><strong>Revenue model:</strong> <strong>ads only, no in-app purchases, no third-party ad systems.</strong> Two deal types:</li>
+<li><strong>Web Exclusive (preferred):</strong> default <strong>5-year</strong> term. You get <strong>100% of revenue</strong> when <em>you</em> bring the player (search, bookmarks, social) and <strong>50/50</strong> when Poki brings them. Poki invests in marketing/UA. Exclusivity applies to the <strong>open web only</strong> — Steam, app stores and consoles stay yours.</li>
+<li><strong>Non-Exclusive:</strong> one-time <strong>flat licence fee</strong>, no revenue share.</li>
+<li><strong>Requirements (key ones):</strong></li>
+<li>Initial download <strong>&lt; 8 MB</strong> target (Unity games must optimise hard).</li>
+<li><strong>No IAP UI at all</strong>, no dual currencies, no ad-block messaging, no external splash/links, no third-party ads.</li>
+<li><strong>No external requests</strong> by default (no Google Fonts/CDNs/Analytics) — only Poki's own tooling.</li>
+<li><strong>Portrait support required</strong>; mobile controls forced on tablets; responsive.</li>
+<li><strong>Originality is enforced</strong> — "adds to diversity" means a mechanic/setting/angle <em>not already well represented</em>. Clones and AI-generated assets with watermarks are rejected. Misused IP / adult themes = instant rejection.</li>
+<li>Provide static <strong>and</strong> animated thumbnails; implement the Poki SDK (<code>gameplayStart</code>, <code>commercialBreak</code>).</li>
+<li><strong>Engagement targets:</strong> <strong>65%+ conversion-to-play</strong>, <strong>5+ min avg playtime (10+ for management/sim)</strong>; loops around <strong>~3 minutes</strong> perform best; ~1 hour of content is usually right.</li>
+<li><strong>Best fit:</strong> polished, original casual/puzzle/hypercasual, portrait, instant-play.</li>
+<li><strong>Verdict:</strong> highest ceiling and best marketing support, but the <strong>hardest and most curated</strong> gate, and <strong>no IAP ever</strong>. Best as your <em>primary</em> web home if your game is original enough.</li>
+</ul>
+<h3 id="42-crazygames-the-tier-1-volume-platform">4.2 CrazyGames — the Tier-1 volume platform</h3>
+<ul>
+<li><strong>Audience:</strong> 50–60M+ monthly players, <strong>especially strong in the US/Tier-1</strong>; 4,500+ games.</li>
+<li><strong>Revenue model:</strong> <strong>advertising revenue share</strong> via the CrazyGames SDK. <strong>Optional in-game purchases</strong> (invite-only, via <strong>Xsolla</strong>, using CrazyGames <code>userId</code>). Monthly payouts through <strong>Tipalti</strong>; <strong>€100 minimum</strong>; effectively NET-10 in practice.</li>
+<li><strong>Two launch stages:</strong></li>
+<li><strong>Basic Launch:</strong> SDK optional, <strong>no monetisation</strong>, lets you go live and be evaluated.</li>
+<li><strong>Full Launch:</strong> SDK required → unlocks ads, analytics, cloud saves, social. <strong>+50% compensation</strong> if you opt into <strong>2-month time-based exclusivity</strong> (game hosted by CrazyGames).</li>
+<li><strong>Requirements:</strong> initial download <strong>≤50 MB</strong> (≤20 MB to qualify for the mobile homepage); total ≤250 MB; ≤1500 files; PEGI-12; land <strong>directly in gameplay</strong>; must <strong>work with AdBlock</strong>; only SDK ads allowed; no other portal branding. Unity + HTML5 SDKs supported (Godot adapter too).</li>
+<li><strong>Best fit:</strong> broad casual, .io/multiplayer, arcade, puzzle, merge — anything with strong retention.</li>
+<li><strong>Verdict:</strong> the best <strong>Tier-1 / US</strong> reach and a real <strong>IAP path later</strong>. Basic Launch is a low-risk way to test.</li>
+</ul>
+<h3 id="43-gamedistribution-azerion-the-pure-distribution-network">4.3 GameDistribution (Azerion) — the pure distribution network</h3>
+<ul>
+<li><strong>Audience:</strong> <strong>+3,000 publishers</strong> (web portals, media companies, telecoms) across <strong>105+ countries</strong>, <strong>+350M monthly gameplays</strong>. Your game gets syndicated across the network — no need to court each publisher.</li>
+<li><strong>Revenue model:</strong> <strong>33% developer revenue share</strong> of net revenue (ads <strong>and</strong> IAP). Payouts when ≥ €100, within 60 days of the monthly report.</li>
+<li><strong>Requirements:</strong> SDK <strong>mandatory</strong>; <strong>pre-roll + mid-roll ads are required</strong>, rewarded/display optional but recommended; game paused &amp; muted during ads; <strong>English version mandatory</strong>; HTTPS; desktop + mobile; responsive iframe (standard <strong>800×600</strong>); thumbnails at <strong>512×512, 512×384, 200×120</strong>; engines: Unity WebGL, JS, Construct 2/3. Approval can take <strong>up to 3 weeks</strong>. No identical games / IP violations.</li>
+<li><strong>Best fit:</strong> almost any quality HTML5 casual game — it is a <strong>syndication multiplier</strong>.</li>
+<li><strong>Verdict:</strong> the single best <strong>reach-per-effort</strong> for a distribution-only strategy, but a <strong>lower share (33%)</strong> and mandatory ad placements.</li>
+</ul>
+<h3 id="44-gamemonetize-the-developer-friendly-high-share-network">4.4 GameMonetize — the developer-friendly high-share network</h3>
+<ul>
+<li><strong>Audience:</strong> <strong>7,500+ publishers</strong>; 3,500+ in the portfolio, some exclusive (don't carry GameDistribution titles).</li>
+<li><strong>Revenue model:</strong> <strong>45% revenue share</strong>, <strong>NET-30</strong> (paid within ~25 days), via <strong>PayPal / USDT (ERC-20)</strong>. <strong>Minimum payout $30.</strong> If you're also a publisher, dev + publisher share can total <strong>90%</strong>.</li>
+<li><strong>Requirements / perks:</strong> SDK integration is quick (they claim ~5 min, SDKs on GitHub for JS/Construct/Unity); <strong>branding and external links are allowed</strong> (unlike Poki); simple self-serve dashboard with "Verify Game"; content-manager review before activation.</li>
+<li><strong>Best fit:</strong> casual, arcade, puzzle — great as a <strong>second/parallel network</strong> alongside GameDistribution.</li>
+<li><strong>Verdict:</strong> <strong>best share among the pure networks</strong>, easiest integration, but lower curation = less promotion; think of it as a <strong>volume/monetisation</strong> channel, not a marketing one.</li>
+</ul>
+<h3 id="45-yandex-games-the-cisemerging-market-giant">4.5 Yandex Games — the CIS/emerging-market giant</h3>
+<ul>
+<li><strong>Audience:</strong> dominant in <strong>Russia / CIS / emerging markets</strong>; huge daily audience. Great for geo-diversification.</li>
+<li><strong>Revenue model — "Unified Licensing Model (ULM)":</strong> combines <strong>internal ads (Yandex Advertising Network, YAN) + third-party ads + in-app purchases</strong> under one agreement, one payout. <strong>In-app purchases ARE supported</strong> (portal currency, "yans"). Yandex places ads and pays a <strong>3% fee</strong> itself.</li>
+<li><strong>Payouts:</strong> once/month; thresholds <strong>3,000 RUB / $150 / €100 / 500 AED</strong>; paid within ~20 business days of the following month.</li>
+<li><strong>Requirements:</strong> SDK <strong>mandatory for moderation</strong> (it also handles fullscreen, language detection, server time); <strong>all ads and purchases must go through the SDK</strong> (no third-party ads); auto language detection; <strong>"Game Ready" event</strong> must be called correctly; portrait/mobile friendly.</li>
+<li><strong>Best fit:</strong> casual, puzzle, merge, arcade — anything with broad global appeal.</li>
+<li><strong>Verdict:</strong> essential for <strong>geo-diversification</strong> and one of the few stores where <strong>IAP is straightforward</strong> later.</li>
+</ul>
+<h3 id="46-playgama-self-hosting-the-one-sdk-distribution-layer">4.6 Playgama (+ self-hosting) — the one-SDK distribution layer</h3>
+<ul>
+<li><strong>What it is:</strong> <strong>Playgama Bridge</strong>, an <strong>open-source (LGPL-3.0) unified SDK</strong> that adapts <strong>one HTML5 build</strong> to <strong>25+ platforms</strong> — Poki, CrazyGames, GameDistribution, Yandex Games, YouTube Playables, MSN, Discord, Facebook, Huawei, Xiaomi, Reddit, GameSnacks, JioGames, Y8, Lagged, Playhop and more. It wraps each platform's native ads / storage / payments / leaderboard APIs. <strong>Reach: 450M+ users/month.</strong></li>
+<li><strong>Revenue model — tiered, transparent:</strong> <strong>70% of net revenue up to $1,000</strong>, then <strong>80%</strong> on revenue above $1,000 (up to $3,000), then <strong>90%</strong> above $3,000. Plus a <strong>link-based distribution API</strong> so 100+ partner portals can pull your game automatically.</li>
+<li><strong>IAP:</strong> supported on <strong>~10 platforms</strong> (CrazyGames, Discord, Facebook, Huawei, Microsoft Store, MSN, Playgama, Reddit, Yandex). Games enabling IAP earn up to <strong>1.8× more</strong> than ad-only. <strong>Anzu native ads</strong> (in-game billboards) can yield up to <strong>400% higher revenue</strong> on some titles.</li>
+<li><strong>How publishing works:</strong> Bridge handles the <em>SDK calls</em> only — you still <strong>submit through each platform's own console</strong>. It removes the per-store SDK rework, not the per-store submission.</li>
+<li><strong>Self-hosting:</strong> you can also host the build yourself and syndicate via link — good for owning your own site and cross-promotion.</li>
+<li><strong>Verdict:</strong> <strong>the single highest-leverage decision in this report.</strong> Integrate Bridge once → your game is portable to every store in this document. Strongly recommended as your integration layer.</li>
+</ul>
+<h3 id="47-itchio-the-indie-showcase-not-an-ad-network">4.7 itch.io — the indie showcase (not an ad network)</h3>
+<ul>
+<li><strong>What it is:</strong> free hosting + a storefront for indie games; supports <strong>HTML5 web builds</strong> played in an iframe. Hosts your files; you design the page.</li>
+<li><strong>Revenue model:</strong> <strong>Open Revenue Sharing</strong> — <em>you choose</em> 0–100% to itch.io (default 10%). <strong>Advertisements are never placed on your pages.</strong> For <strong>HTML5 games, payments are donations only</strong>; to actually <em>sell</em>, you set the project to "Downloadable."</li>
+<li><strong>Role in your plan:</strong> itch.io is <strong>not</strong> a primary ad-revenue channel (it doesn't run ads and HTML5 can't be sold directly). Use it as a <strong>free showcase / portfolio / community-building</strong> page, and as a funnel to your other stores. Good for wishlists, press keys and a "play in browser" demo.</li>
+<li><strong>Verdict:</strong> include it for <strong>discovery and credibility</strong>, not for ad revenue.</li>
+</ul>
+<hr />
+<h2 id="5-cross-store-comparison-matrix">5. Cross-store comparison matrix</h2>
+<table>
+<thead>
+<tr>
+<th>Store</th>
+<th>Model</th>
+<th>Dev share</th>
+<th>Audience</th>
+<th>IAP</th>
+<th>SDK required</th>
+<th>Key gate</th>
+<th>Best role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Poki</strong></td>
+<td>Ads only</td>
+<td>50–100% (deal-based)</td>
+<td>100M+ MAU, global</td>
+<td>❌ Never</td>
+<td>Yes</td>
+<td>Originality + &lt;8MB</td>
+<td>Primary web home (if original)</td>
+</tr>
+<tr>
+<td><strong>CrazyGames</strong></td>
+<td>Ads (+IAP invite)</td>
+<td>Rev-share (+50% w/ 2-mo exclusive)</td>
+<td>50–60M MAU, US-heavy</td>
+<td>✅ Invite-only (Xsolla)</td>
+<td>Yes (Full)</td>
+<td>Full Launch SDK</td>
+<td>Tier-1 reach + IAP path</td>
+</tr>
+<tr>
+<td><strong>GameDistribution</strong></td>
+<td>Ads (+IAP)</td>
+<td><strong>33%</strong></td>
+<td>3,000+ publishers, 105+ countries</td>
+<td>✅</td>
+<td>Yes</td>
+<td>Mandatory pre/mid-roll</td>
+<td>Distribution multiplier</td>
+</tr>
+<tr>
+<td><strong>GameMonetize</strong></td>
+<td>Ads</td>
+<td><strong>45%</strong></td>
+<td>7,500+ publishers</td>
+<td>(ads-focused)</td>
+<td>Yes</td>
+<td>Quick SDK + review</td>
+<td>High-share second network</td>
+</tr>
+<tr>
+<td><strong>Yandex Games</strong></td>
+<td>Ads + IAP (ULM)</td>
+<td>Rev-share</td>
+<td>CIS/emerging dominant</td>
+<td>✅</td>
+<td>Yes (moderation)</td>
+<td>SDK + Game Ready</td>
+<td>Geo-diversification</td>
+</tr>
+<tr>
+<td><strong>Playgama</strong></td>
+<td>Ads + IAP + Anzu</td>
+<td><strong>70→90%</strong> tiered</td>
+<td>450M+ reach, 25+ platforms</td>
+<td>✅ (~10 platforms)</td>
+<td>Bridge (open-source)</td>
+<td>—</td>
+<td><strong>One-SDK portability</strong></td>
+</tr>
+<tr>
+<td><strong>itch.io</strong></td>
+<td>Donations (HTML5)</td>
+<td>0–100% (you choose)</td>
+<td>Indie discovery</td>
+<td>Donations</td>
+<td>No</td>
+<td>None</td>
+<td>Showcase / portfolio</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Read-out:</strong> publish with <strong>Playgama Bridge</strong> as the integration layer, then submit to <strong>Poki (primary) + CrazyGames + GameDistribution + GameMonetize + Yandex</strong>, and mirror a <strong>showcase page on itch.io</strong>. That combination covers the largest global reach, the highest Tier-1 share, and the best revenue-share tier — with <strong>ads-only</strong> throughout, exactly as you want now.</p>
+<hr />
+<h2 id="6-genre-search-demand-analysis">6. Genre &amp; search-demand analysis</h2>
+<h3 id="what-is-growing">What is growing</h3>
+<ul>
+<li><strong>Merge</strong> — the <strong>fastest-growing puzzle subgenre</strong>: <strong>+61–80% YoY</strong> (revenue ~$1.4–1.5B in 2025, +80% YoY), described as "the only growing complex niche." Still <strong>open to new entrants</strong> (unlike saturated Match-3).</li>
+<li><strong>Physics puzzle</strong> — <strong>+61% YoY</strong>.</li>
+<li><strong>Block / Screw / Sort puzzles</strong> — the "hybridcasual" risers: Block Puzzle revenue <strong>~12×</strong>, Screw Puzzle <strong>~2.8×</strong>, Sort Puzzle <strong>~2.2×</strong>.</li>
+<li><strong>Idle</strong> — large, loyal user base; <strong>ad-heavy (60–70% of revenue)</strong>; highest average rating (7.61) in web-game analysis; day-1 retention <strong>20–30%</strong>.</li>
+<li><strong>Suika / watermelon merge (physics-drop)</strong> — a <strong>proven web phenomenon</strong>: Suika Game has <strong>13M+ downloads</strong> across platforms; <em>Watermelon Suika Game</em> on GameDistribution did <strong>1.1M+ plays</strong> (700k in 2023 alone); the original <em>Merge Big Watermelon</em> browser game drew <strong>1.4B search hits</strong>. Multiple Suika-style titles are <strong>trending on Playgama and CrazyGames right now</strong>.</li>
+</ul>
+<h3 id="what-is-saturated-declining">What is saturated / declining</h3>
+<ul>
+<li>Match-3 (mature, dominated by Candy Crush/Royal Match/Gardenscapes), Match-3D (<strong>declining</strong>), Find-the-Difference (<strong>−42%</strong>), classic arcade/action on web. <strong>Avoid direct clones of these.</strong></li>
+</ul>
+<h3 id="search-demand-confidence-mediumhigh">Search demand (confidence: medium–high)</h3>
+<ul>
+<li>High-volume web search terms include <strong>"watermelon game", "suika game", "merge games", "fruit merge"</strong>, plus evergreen casual terms ("puzzle games", "io games", "car games", "idle games"). Google's 2025 Year-in-Search gaming list skews to big console titles, but <em>Strands</em> (an NYT puzzle) made the top-10 — evidence that <strong>daily-loop puzzle/merge play is where casual search attention lives.</strong></li>
+<li><strong>Takeaway:</strong> a <strong>merge + physics-drop game</strong> sits at the intersection of <em>growing genre</em>, <em>proven web virality</em>, and <em>high search demand</em>.</li>
+</ul>
+<h3 id="what-the-top-web-charts-actually-look-like">What the top web charts actually look like</h3>
+<ul>
+<li><strong>Poki trending/top:</strong> Subway Surfers, Level Devil, Smash Karts, <strong>Blocky Blast Puzzle</strong>, Drive Mad, <strong>My Perfect Hotel (idle)</strong>, Plonky (physics), <strong>Bounce Ball (merge/shooter)</strong>, Vortella's Dress-Up.</li>
+<li><strong>CrazyGames top casual:</strong> <strong>Piece of Cake: Merge &amp; Bake</strong>, Ragdoll Archers, Piles of Mahjong, Words of Wonders, <strong>Designville: Merge &amp; Design</strong>, <strong>Farm Merge Valley</strong>.</li>
+<li><strong>Playgama trending:</strong> <strong>Fruit Merge: Juicy Drop</strong>, Snake 2048, <strong>Piece of Cake: Merge &amp; Bake</strong>, Geometry Arrow 2, Hidden Object titles.</li>
+</ul>
+<p><strong>Pattern:</strong> on every store, <strong>merge/puzzle + physics + idle</strong> appear again and again at the top. That is your target zone.</p>
+<hr />
+<h2 id="7-player-pain-points-market-gaps">7. Player pain points &amp; market gaps</h2>
+<p><strong>Pain points (from portal guidance, review patterns and developer post-mortems):</strong>
+1. <strong>Slow load / big builds</strong> — the #1 killer of conversion-to-play. Players leave in seconds.
+2. <strong>Text tutorials / pop-ups</strong> — web players won't read; onboarding must <em>be</em> gameplay.
+3. <strong>Waiting / downtime</strong> — "games where the player can constantly perform an action outperform games with waiting." Idle must stay <em>interactive</em>.
+4. <strong>Aggressive / gating ads</strong> — rewarded ads must be optional, never a wall; interstitials must sit at natural breaks.
+5. <strong>Overpromising thumbnails</strong> — good CTR but immediate churn if the game doesn't match.
+6. <strong>Clone fatigue</strong> — Poki explicitly rejects games that don't "add to diversity."</p>
+<p><strong>Market gaps you can exploit:</strong>
+- <strong>Merge + idle meta on web is under-served.</strong> Merge is huge on mobile but web is still early — a merge game <em>with a persistent progression world</em> is a genuine gap and satisfies Poki's originality rule.
+- <strong>Hybridcasual depth without IAP.</strong> Most web merge games are shallow. A deeper meta (unlockables, daily goals, light idle production) raises retention <em>and</em> ad impressions — without needing IAP.
+- <strong>Fresh themes beat fruit clones.</strong> Fruit/Suika is crowded and risks clone-rejection. A new theme + one novel mechanic = approvable <em>and</em> searchable.</p>
+<hr />
+<h2 id="8-recommended-game-concept-primary">8. Recommended game concept (primary)</h2>
+<h3 id="merge-bloom-a-drop-and-merge-physics-puzzle-that-grows-a-living-world">🏆 "Merge &amp; Bloom" — a drop-and-merge physics puzzle that grows a living world</h3>
+<blockquote>
+<p><strong>One-line pitch:</strong> A juicy physics puzzle where you drop and merge magical plants/creatures — every merge grows your floating garden, which passively produces seeds while you're away.</p>
+</blockquote>
+<p><strong>Why this wins across <em>all</em> seven stores:</strong> it combines the <strong>fastest-growing genre (merge)</strong>, the <strong>most proven web mechanic (physics drop)</strong>, <strong>high search demand</strong>, <strong>portrait + tiny build</strong> feasibility, <strong>ad-first monetisation</strong>, and a <strong>persistent idle meta</strong> that satisfies Poki's originality bar and gives a reason to return — all while leaving an <strong>IAP door open</strong> for later.</p>
+<p><strong>Core gameplay loop (~3 min):</strong>
+1. Drop a piece into the container (drag + release; one-finger / one-mouse).
+2. Two identical pieces merge → the next tier up, with a satisfying pop + particle burst.
+3. Merges fill a <strong>growth meter</strong>; each milestone <strong>grows your garden</strong> (a persistent meta-world).
+4. Clear the board / hit a combo to earn <strong>seeds</strong> (soft currency).
+5. Spend seeds on <strong>garden upgrades</strong> (passive seed production) and <strong>cosmetic skins</strong>.
+6. Run ends only if the container overflows → <strong>rewarded video offers one "undo"</strong> (optional, never forced).</p>
+<p><strong>Unique differentiators (the "adds to diversity" angle):</strong>
+- <strong>Merge → grow-a-world meta:</strong> your merges literally build a persistent garden that produces resources — a merge game <em>and</em> a light idle/tycoon game in one. This is the gap in the current web merge wave.
+- <strong>One novel mechanic — "Combo Chains":</strong> fast consecutive merges build a multiplier that can <em>temporarily</em> let you drop higher-tier pieces. Skill expression on top of luck.
+- <strong>Original theme</strong> (not fruit, not Suika) to dodge clone-rejection and own a searchable identity.</p>
+<p><strong>Feature priority (build order):</strong>
+1. <strong>P0 — MVP:</strong> drop + merge physics core, overflow lose-condition, score, one container skin, one 60-second session, instant onboarding (no menu, no text tutorial).
+2. <strong>P1 — Retention:</strong> garden idle meta (passive seeds + 3–4 upgrades), daily goal, cloud save (via SDK), rewarded "undo/boost".
+3. <strong>P2 — Depth:</strong> Combo Chains, unlockable themes/skins, seasonal event container, leaderboard.
+4. <strong>P3 — Later:</strong> cosmetic IAP (skins, season pass) — wired but disabled at launch.</p>
+<p><strong>MVP scope (what "done" looks like):</strong> one core scene, 8–11 merge tiers, physics tuned to ~60fps on mid mobile, &lt;8 MB initial build, portrait + landscape, full-screen responsive, SDK hooks (gameplayStart/stop, interstitial, rewarded), analytics event on first merge and on game-over. <strong>Target: 4–6 weeks for a solo dev on Construct/Phaser.</strong></p>
+<p><strong>Why it scores highest (see §9 for the model):</strong> search demand <strong>9</strong>, cross-store fit <strong>9</strong>, ad revenue potential <strong>9</strong>, build cost for a solo dev <strong>8</strong> (cheap), retention <strong>8</strong>, IAP-readiness <strong>8</strong>, competition crowding <strong>6</strong> (the one weak spot — mitigated by theme + meta).</p>
+<hr />
+<h2 id="9-runner-up-concepts-scoring">9. Runner-up concepts &amp; scoring</h2>
+<p>Scoring: each dimension 0–10, weighted; <strong>higher is better</strong> (for "crowding", a higher score = less crowded = better).</p>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Search demand</th>
+<th>Cross-store fit</th>
+<th>Ad revenue</th>
+<th>Build cost (solo)</th>
+<th>Retention</th>
+<th>IAP-ready</th>
+<th>Not crowded</th>
+<th><strong>Weighted total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Merge &amp; Bloom</strong> (merge + physics + idle meta)</td>
+<td>9</td>
+<td>9</td>
+<td>9</td>
+<td>8</td>
+<td>8</td>
+<td>8</td>
+<td>6</td>
+<td><strong>8.4</strong></td>
+</tr>
+<tr>
+<td>Hypercasual one-tap runner/drift (Drive Mad-style)</td>
+<td>9</td>
+<td>8</td>
+<td>7</td>
+<td>9</td>
+<td>6</td>
+<td>4</td>
+<td>4</td>
+<td><strong>7.0</strong></td>
+</tr>
+<tr>
+<td>Idle / tycoon sim (My Perfect Hotel-style)</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>6</td>
+<td>9</td>
+<td>7</td>
+<td>6</td>
+<td><strong>7.6</strong></td>
+</tr>
+<tr>
+<td>Block/Sort/Screw puzzle (hybridcasual)</td>
+<td>8</td>
+<td>9</td>
+<td>8</td>
+<td>8</td>
+<td>7</td>
+<td>6</td>
+<td>5</td>
+<td><strong>7.5</strong></td>
+</tr>
+<tr>
+<td>.io multiplayer arena</td>
+<td>8</td>
+<td>6</td>
+<td>6</td>
+<td>4</td>
+<td>8</td>
+<td>7</td>
+<td>5</td>
+<td><strong>6.3</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Interpretation:</strong>
+- <strong>Merge &amp; Bloom (8.4)</strong> wins on the best blend of growth, reach, monetisation and buildability.
+- <strong>Idle/tycoon (7.6)</strong> is a strong <em>second game</em> — highest retention and ad revenue, but heavier to build and needs 10+ min playtime targets.
+- <strong>Runner/drift (7.0)</strong> is cheapest to build and highly searchable, but <strong>crowded</strong> and IAP-poor.
+- <strong>Block/Sort/Screw puzzle (7.5)</strong> is a great <em>fallback</em> if you want an even cheaper, very web-native build.
+- <strong>.io (6.3)</strong> — great if you can build multiplayer (Poki Netlib helps), but the highest dev cost and risk for a solo team.</p>
+<hr />
+<h2 id="10-monetisation-ad-strategy-ads-now-iap-later">10. Monetisation &amp; ad strategy (ads now, IAP later)</h2>
+<p><strong>Now — ads only:</strong>
+- <strong>Interstitials</strong> at natural breakpoints only: <strong>game-over screen, level/milestone transition, return-to-menu.</strong> Never at game start (platforms auto-handle start ads; calling it yourself can duplicate). Mute + pause the game during ads.
+- <strong>Rewarded video</strong> — <em>optional extras only</em>: one "undo" after overflow, a temporary Combo boost, or a seed multiplier. <strong>Never gate core progression behind a rewarded ad</strong> (fails Poki review). Buttons must show a clear video icon, never green, never trick-placed.
+- <strong>Banners/display</strong> (where a network allows, e.g. GD) — only outside gameplay, never covering content.
+- <strong>Frequency</strong> is managed by the platform (Poki, GD, CrazyGames). <strong>Do not</strong> add your own cooldowns/timers to force ad frequency.
+- <strong>Stay playable with AdBlock on</strong>, and let the platform handle ad-block messaging.</p>
+<p><strong>Later — IAP hook (built now, switched on later):</strong>
+- Wire the <strong>Playgama Bridge payments</strong> module and the <strong>CrazyGames <code>userId</code></strong> flow from day one, but <strong>hide IAP UI at launch</strong> (Poki forbids it; GameDistribution terms forbid native apps; basic-launch CrazyGames has no monetisation).
+- Planned SKUs when you enable it: <strong>cosmetic skins</strong>, <strong>season pass</strong>, <strong>seed bundles</strong>, <strong>no-ads-for-a-month</strong>. Enable only on stores that support it (CrazyGames, Yandex, Playgama network, MSN, etc.).
+- <strong>Never ship IAP UI into a Poki or GameDistribution build.</strong> Gate it by platform via Bridge's <code>payments.isSupported</code>.</p>
+<p><strong>Revenue-share reality check:</strong> ad CPMs vary by geo and season. Expect <strong>Poki 50–100%</strong>, <strong>CrazyGames rev-share</strong>, <strong>GD 33%</strong>, <strong>GameMonetize 45%</strong>, <strong>Playgama 70→90%</strong>. Your effective revenue = plays × session length × ad impressions × CPM × your share. Longer, ad-friendly sessions (merge + idle) directly raise all of these.</p>
+<hr />
+<h2 id="11-store-rollout-submission-plan">11. Store rollout &amp; submission plan</h2>
+<p><strong>Phase 0 — Build &amp; integrate (weeks 0–6):</strong> build the MVP in <strong>Construct 3 or Phaser</strong> (web-native, small, fast). Integrate <strong>Playgama Bridge</strong> once for ads/save/platform. Target &lt;8 MB, portrait, no external requests, instant onboarding.</p>
+<p><strong>Phase 1 — Soft launch &amp; iterate (weeks 6–9):</strong>
+- Submit to <strong>CrazyGames (Basic Launch)</strong> — go live fast, gather metrics, no SDK gate.
+- Submit to <strong>GameDistribution</strong> and <strong>GameMonetize</strong> (fast, monetised distribution) with mandatory ad placements.
+- Use <strong>Poki Playtesting</strong> (free) to get real-player videos and fix onboarding/drop-off.</p>
+<p><strong>Phase 2 — Push for the big platforms (weeks 9–14):</strong>
+- Apply to <strong>Poki</strong> (primary) with the polished, <em>original</em> build.
+- Submit to <strong>Yandex Games</strong> (SDK + Game Ready).
+- Move <strong>CrazyGames</strong> to <strong>Full Launch</strong> (SDK, monetisation; consider the 2-month exclusivity +50%).
+- Enable <strong>Playgama</strong> network distribution (link API) to reach 100+ partner portals.</p>
+<p><strong>Phase 3 — Expand (month 4+):</strong> YouTube Playables, MSN, Discord, Huawei/Xiaomi via Bridge; add the <strong>itch.io showcase page</strong>; add seasonal events; then <strong>switch on IAP</strong> on supported stores.</p>
+<p><strong>Assets to prepare once, reuse everywhere:</strong> static + animated thumbnails (512×512, 512×384, 200×120, 16:9 cover), a trailer, description + controls text, privacy policy URL, and a clean build with no debug/splash/outgoing links.</p>
+<hr />
+<h2 id="12-risk-analysis-go-no-go-score">12. Risk analysis &amp; Go / No-Go score</h2>
+<table>
+<thead>
+<tr>
+<th>Risk</th>
+<th>Likelihood</th>
+<th>Impact</th>
+<th>Mitigation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Crowding</strong> (merge/Suika clones everywhere)</td>
+<td>High</td>
+<td>High</td>
+<td>Original theme + idle meta + Combo Chains mechanic; meet Poki's "adds to diversity" bar</td>
+</tr>
+<tr>
+<td><strong>Slow load → low conversion</strong></td>
+<td>Medium</td>
+<td>High</td>
+<td>Web-native engine, &lt;8 MB, background asset loading, progress bar, instant onboarding</td>
+</tr>
+<tr>
+<td><strong>Poki rejection</strong> (curation)</td>
+<td>Medium</td>
+<td>Medium</td>
+<td>Soft-launch elsewhere first, iterate with Poki Playtesting, keep the build original</td>
+</tr>
+<tr>
+<td><strong>Ad-block / low CPM in some geos</strong></td>
+<td>Medium</td>
+<td>Medium</td>
+<td>Diversify stores (Tier-1 via CrazyGames/Poki, emerging via Yandex/GD), keep sessions long</td>
+</tr>
+<tr>
+<td><strong>WebGL/mobile performance</strong></td>
+<td>Medium</td>
+<td>Medium</td>
+<td>Phaser/Construct 2D, cap particle counts, test on mid-range Android</td>
+</tr>
+<tr>
+<td><strong>IP/trademark issues</strong></td>
+<td>Low</td>
+<td>High</td>
+<td>Own theme; never reuse "Suika" name/art; keep AI assets watermark-free with documented prompts</td>
+</tr>
+<tr>
+<td><strong>No IAP at launch</strong></td>
+<td>Certain (by design)</td>
+<td>Low</td>
+<td>Ad-first by choice; IAP wired and switched on later</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Go / No-Go score: 8.4 / 10 → GO.</strong>
+Merge + physics is the highest-demand, most proven, most ad-friendly, most store-portable concept available to a solo developer right now. The single genuine weakness (crowding) is directly addressed by the original theme and the idle meta layer. Build the MVP small and fast, soft-launch on CrazyGames/GD/GameMonetize, iterate with real player data, then push to Poki and Yandex and switch on IAP later.</p>
+<hr />
+<h2 id="13-sources">13. Sources</h2>
+<p><strong>Portal developer documentation &amp; terms</strong>
+- Poki for Developers — Working with Poki; Requirements; Monetization overview; Deal Types; Engagement; Reading test results; State of Web Gaming 2026.
+- CrazyGames Docs — Requirements intro; Technical; Advertisement; Payouts; FAQ; Developer Terms (Aug 2025).
+- GameDistribution — Developer Terms; Developer Guidelines; Partnership page; Watermelon Suika Game case study.
+- GameMonetize — Developers; FAQ; SDK.
+- Yandex Games SDK — Unified licensing model; Game requirements; Monetization; In-app purchases; Advertisement.
+- Playgama — Developers; Bridge SDK wiki (getting started, payments, interstitial); Bridge business FAQ.
+- itch.io — HTML5 uploads; Payments &amp; Open Revenue Sharing; Developers.</p>
+<p><strong>Market &amp; genre research</strong>
+- The Business Research Company — Browser Games Market Report 2026.
+- Global Market Statistics — HTML5 Games Market.
+- PocketGamer.biz — CrazyGames browser-gaming report (hypercasual &amp; puzzle dominance).
+- AppMagic / GameAnalytics-style casual reports (via GameDevReports, Gamigion, Mobidictum, InvestGame) — Merge +61–80% YoY, Block Puzzle ×12, physics puzzle +61%.
+- Playgama — Web-based Game Engine Rankings H1 2025; engine-by-genre analysis.
+- Sublevel Games — Armor Games web-game data analysis (genre performance matrix).
+- Wikipedia — Suika Game (genre history, downloads, viral dynamics).</p>
+<p><strong>Methodology</strong>
+- Market-intelligence stack adapted from the developer's brief: AppStoreCat (MIT) + Crawl4AI (Apache-2.0) + Research-Agent (MIT), re-scoped from mobile app stores to web game portals.</p>
+<hr />
+<p><em>Note on data honesty: several web portals do not publish per-game play counts or revenue. Figures marked as estimates carry lower confidence and should be validated against your own post-launch dashboards. Revenue-share terms change; always confirm current terms in each store's developer portal before signing.</em></p>
+    </div>
+  </div>
+</body>
+</html>
